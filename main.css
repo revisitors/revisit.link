@@ -47,35 +47,50 @@ table {
     border-spacing: 0;
 }
 
+@font-face {
+    font-family: 'NeoRetroDraw';
+    src: url('NEORD___-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    background-color: #b3b5b4;
-    font-family: Helvetica, Arial, sans-serif;
+    background-color: #eee;
+    color: #555;
+    font-family: Arial, sans-serif;
     padding: 20px;
 }
 
+h1, h2, h3 {
+  font-family: NeoRetroDraw;
+  font-weight: 100;
+}
+
 h1 {
-    font-size: 3.3rem;
-    font-weight: 600;
+    font-size: 2.2rem;
     margin: 0 0 20px;
 }
 
 h1 a {
-    color: #52dee0;
+    color: #444;
+}
+
+h1 a:hover {
+    color: #1ae09d;
 }
 
 h2 {
-    color: #fe5da9;
-    font-size: 2.1rem;
-    font-weight: 400;
-    text-shadow: #00bfe8 10px 2px 0;
+    color: #444;
+    font-size: 1.9rem;
+    margin: 30px 0 10px 0;
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.45);
     border-radius: 2px;
     margin: 30px 0;
     max-width: 900px;
-    padding: 20px 10px;
+    padding: 10px;
 }
 
 section > * {
@@ -85,16 +100,32 @@ section > * {
 section p, section li {
     color: #666;
     font-size: 1.1rem;
-    line-height: 1.8rem;
+    line-height: 1.4rem;
 }
 
-section ol {
-    list-style-type: disc;
-    margin-left: 40px;
+section > ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+section > ol > li {
+  margin-bottom: 15px;
+}
+
+section > ol li span {
+    color: #15c186;
+}
+
+section ol li ul {
+    margin-left: 20px;
+}
+
+section ol li ul li {
+    margin: 5px 0;
 }
 
 section h3 {
-    color: #888;
+    color: #777;
     font-size: 1.6rem;
     margin-bottom: 15px;
 }
@@ -102,6 +133,19 @@ section h3 {
 a {
     color: #15acba;
     text-decoration: none;
+}
+
+pre {
+    background-color: #eee;
+    margin-right: 20px;
+    margin-top: 10px;
+    overflow-x: scroll;
+    padding: 10px 0;
+}
+
+code {
+    font-family: monospace;
+    font-size: 1rem;
 }
 
 footer p {

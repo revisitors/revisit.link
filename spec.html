@@ -15,10 +15,21 @@
     <section>
       <h3>Specifications</h3>
       <ol>
-        <li>No copyrighted content can be used in this project (including video, audio, images, etc.)</li>
-        <li>One API token can be used for all available services</li>
-        <li>The following are the only REST calls the service can provide to users: GET, POST</li>
-        <li>All content must be ephemeral and be automatically deleted after the 10 most recent posts per API token</li>
+        <li>Only API token can be used for all available services per script</li>
+        <li>The following are the only REST calls the service can provide to users:
+          <ul>
+            <li><span>GET</span> /{id} where id is the service identifier on your server</li>
+            <li><span>POST</span> /service where you post JSON in the following format:
+              <pre>
+    <code>{
+      "token": {TOKEN},
+      "url": {SERVICE URL},
+      "content": {STRING OR BUFFER}
+  }</code></pre>
+            </li>
+          </ul>
+        </li>
+        <li>All content from a service can only be accessed by that service. Nothing is stored on the central hub except for script links to other service APIs per token.</li>
         <li>Any content passed through the API cannot exceed 1 MB per request</li>
         <li>All code for the service must be open source</li>
         <li>If any of the services violate the rules listed above, they will be removed from the central hub</li>
