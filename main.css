@@ -160,8 +160,7 @@ a {
 
 pre {
     background-color: #eee;
-    margin-right: 20px;
-    margin-top: 10px;
+    margin: 10px 20px 10px 0;
     overflow-x: scroll;
     padding: 10px 0;
 }
