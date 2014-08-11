@@ -116,6 +116,10 @@ section > * {
     font-weight: 100;
 }
 
+section p {
+    margin-bottom: 10px;
+}
+
 section p, section li {
     color: #666;
     font-size: 1.1rem;
