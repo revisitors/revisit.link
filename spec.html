@@ -20,14 +20,12 @@
       <h3>Specifications</h3>
       <ol>
         <li>Only API token can be used for all available services per script</li>
-        <li>The following are the only REST calls the service can provide to users:
+        <li>The following are the only REST calls the service needs to provide to users:
           <ul>
             <li><span>GET</span> /{id} where id is the service identifier on your server</li>
-            <li><span>POST</span> /service where you post JSON in the following format:
+            <li><span>POST</span> /service where JSON is posted to you in the following format:
               <pre>
     <code>{
-      "token": {TOKEN},
-      "url": {SERVICE URL},
       "content": {STRING OR BUFFER}
   }</code></pre>
             </li>
