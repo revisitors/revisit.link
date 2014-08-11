@@ -21,7 +21,15 @@
       <ol>
         <li>The following are the only REST calls the service needs to provide to users:
           <ul>
-            <li><span>GET</span> /{id} is the unique identifier to retrieve the content. This would be generated on your end.</li>
+            <li><span>GET</span> /{id} is the unique identifier to retrieve the content. This would be generated on your end. The return format should be:
+    <code>{
+      {
+          "id": {IDENTIFIFER},
+          "content": {CONTENT}
+      }
+  }</code>
+
+            </li>
             <li><span>POST</span> /service where JSON is posted to you in the following format:
               <pre>
     <code>{
