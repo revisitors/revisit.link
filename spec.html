@@ -24,18 +24,36 @@
             <li><span>POST</span> /service where JSON is posted to you in the following format:
               <pre>
     <code>{
-      "content": {DATA URI}
+      "content": {
+          "type: "image/jpeg",
+          "data": {DATA URI}
+      },
+      "meta": {
+          "audio": {
+              "type": false,
+              "data": false
+          }
+      }
   }</code></pre>
               and returns the following format:
               <pre>
     <code>{
-      "content": {DATA URI}
+      "content": {
+          "type: "image/jpeg",
+          "data": {DATA URI}
+      },
+      "meta": {
+          "audio": {
+              "type": false,
+              "data": false
+          }
+      }
   }</code></pre>
             </li>
           </ul>
         </li>
         <li>All content from a service can only be accessed by that service. Nothing is stored on the central hub except for script links to other service APIs per token.</li>
-        <li>Any content passed through the API cannot exceed 1 MB per request.</li>
+        <li>Any content passed through the API cannot exceed 1 MB per request per media item (content and audio count as two items).</li>
         <li>All code for the service must be open source.</li>
         <li>If any of the services violate the rules listed above, they will be removed from the central hub.</li>
         <li>Once you are ready to include your service to the central hub, add your domain and send a <a href="https://github.com/revisitors/revisit.link.hub/blob/master/config/services.json">pull request to this file</a>.</li>
