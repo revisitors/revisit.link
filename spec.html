@@ -19,35 +19,26 @@
     <section>
       <h3>Specifications</h3>
       <ol>
-        <li>The following is the only REST call the service needs to provide to users:
+        <li>The following are the only REST calls the service needs to provide to users:
           <ul>
             <li><span>GET</span> / where it can return a 200 response when we ping the server to see if it is up.</li>
             <li><span>POST</span> /service where JSON is posted to you in the following format:
               <pre>
     <code>{
       "content": {
-          "type: "image/jpeg",
           "data": "data:image/jpeg;base64,&lt;a base64 blob of the data&gt;",
       },
-      "meta": {
-          "audio": {
-              "type": false,
-              "data": false
-          }
+      "meta": { }
       }
   }</code></pre>
               and returns the following format:
               <pre>
     <code>{
       "content": {
-          "type: "image/jpeg",
           "data": "data:image/jpeg;base64,&lt;a base64 blob of the data&gt;",
       },
       "meta": {
-          "audio": {
-              "type": false,
-              "data": false
-          }
+          "audio": { }
       }
   }</code></pre>
             </li>

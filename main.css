@@ -16,35 +16,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display: block;
+  display: block;
 }
 body {
-    line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-    list-style: none;
+  list-style: none;
 }
 blockquote, q {
-    quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 @font-face {
@@ -56,6 +56,7 @@ table {
 
 body {
   background-color: #f1f1f1;
+  background-image: url(error.gif);
   color: #555;
   font-family: Arial, sans-serif;
 }
@@ -83,7 +84,7 @@ header > div {
   position: relative;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: MaximumSecurity;
 }
 
@@ -92,52 +93,52 @@ h1 {
 }
 
 h1 a span {
-    display: none;
+  display: none;
 }
 
 h1 a {
-    color: #4ef5ff;
+  color: #4ef5ff;
 }
 
 h1 a:hover {
-    color: #1ae09d;
+  color: #1ae09d;
 }
 
 h1 a:hover span {
-    display: inline;
+  display: inline;
 }
 
 h2 {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1.7rem;
-    margin: 10px 0 10px 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.7rem;
+  margin: 10px 0 10px 0;
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.48);
-    border-radius: 2px;
-    margin: 30px auto;
-    max-width: 800px;
-    padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 2px;
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 20px;
 }
 
 section > * {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 section p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 section p, section li {
-    color: #666;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
 }
 
 section > ol {
-    list-style-type: decimal;
-    margin-left: 20px;
+  list-style-type: decimal;
+  margin-left: 20px;
 }
 
 section > ol > li {
@@ -145,47 +146,47 @@ section > ol > li {
 }
 
 section > ol li span {
-    color: #15c186;
+  color: #15c186;
 }
 
 section ol li ul {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 section ol li ul li {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 section h3 {
-    color: #777;
-    font-size: 1.6rem;
-    margin-bottom: 15px;
+  color: #222;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
 }
 
 a {
-    color: #15acba;
-    text-decoration: none;
+  color: #15acba;
+  text-decoration: none;
 }
 
 pre {
-    background-color: #eee;
-    margin: 10px 20px 10px 0;
-    overflow-x: scroll;
-    padding: 10px 0;
+  background-color: #eee;
+  margin: 10px 20px 10px 0;
+  overflow-x: scroll;
+  padding: 10px 0;
 }
 
 code {
-    font-family: monospace;
-    font-size: 1rem;
+  font-family: monospace;
+  font-size: 1rem;
 }
 
 footer {
-    margin: 0 auto;
-    max-width: 820px;
-    padding: 20px 0;
-    text-align: center
+  margin: 0 auto;
+  max-width: 820px;
+  padding: 20px 0;
+  text-align: center
 }
 
 footer p {
-    color: #777;
+  color: #777;
 }
