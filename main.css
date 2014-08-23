@@ -48,38 +48,47 @@ table {
 }
 
 @font-face {
-    font-family: 'NeoRetroDraw';
-    src: url('NEORD___-webfont.woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'MaximumSecurity';
+  src: url('MAXIMUMSECURITY.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    background-color: #f1f1f1;
-    color: #555;
-    font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #555;
+  font-family: Arial, sans-serif;
+}
+
+*::selection {
+  background: #666;
+  color: #eee;
+}
+
+*::-moz-selection {
+  background: #666;
+  color: #eee;
 }
 
 header {
-    background-color: #333;
-    width: 100%;
+  background-color: #333;
+  background-image: url(back.jpg);
+  width: 100%;
 }
 
 header > div {
-    padding: 10px 20px;
-    margin: 0 auto;
-    max-width: 800px;
-    position: relative;
+  padding: 10px 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  position: relative;
 }
 
-h1, h2, h3 {
-  font-family: NeoRetroDraw;
-  font-weight: 100;
+h1, h2 {
+  font-family: MaximumSecurity;
 }
 
 h1 {
-    font-size: 2.2rem;
-    margin: 0 0 20px;
+  font-size: 2.8rem;
 }
 
 h1 a span {
@@ -87,7 +96,7 @@ h1 a span {
 }
 
 h1 a {
-    color: #aaa;
+    color: #4ef5ff;
 }
 
 h1 a:hover {
@@ -99,9 +108,9 @@ h1 a:hover span {
 }
 
 h2 {
-    color: #888;
+    color: rgba(255, 255, 255, 0.7);
     font-size: 1.7rem;
-    margin: 30px 0 10px 0;
+    margin: 10px 0 10px 0;
 }
 
 section {
