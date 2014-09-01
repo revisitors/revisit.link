@@ -51,10 +51,10 @@
             </li>
           </ul>
         </li>
-        <li>All content from a service can only be accessed by that service. Content stored on the hub will be deleted after 1 hour.</li>
-        <li>Any content passed through the API cannot exceed 1 MB per request per media item (content and audio count as two items).</li>
+        <li>All content from a service can only be accessed by that service. Content stored on the central hub will be deleted after 1 hour.</li>
+        <li>Any content passed through http://hub.revisit.link cannot exceed 1 MB per data URI. But data coming from distributed services may increase to a greater size, so ensure your service endpoint can handle a size averaging between 1-3 MB.</li>
         <li>All code for the service must be open source.</li>
-        <li>If any of the services violate the rules listed above, they will be removed from the central hub.</li>
+        <li>If any of the services violate the rules listed above, they will be removed from the central hub (or not merged).</li>
         <li>Once you are ready to include your service to the central hub, add your domain and send a <a href="https://github.com/revisitors/revisit.link.hub/blob/master/config/services.json">pull request to this file</a>.</li>
       </ol>
     </section>
