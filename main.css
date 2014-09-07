@@ -136,24 +136,28 @@ section p, section li {
   line-height: 1.4rem;
 }
 
-section > ol {
+article {
+  margin-bottom: 40px;
+}
+
+article > ol {
   list-style-type: decimal;
   margin-left: 20px;
 }
 
-section > ol > li {
+article > ol > li {
   margin-bottom: 15px;
 }
 
-section > ol li span {
+article > ol li span {
   color: #15c186;
 }
 
-section ol li ul {
+article ol li ul {
   margin-left: 20px;
 }
 
-section ol li ul li {
+article ol li ul li {
   margin: 5px 0;
 }
 

@@ -27,6 +27,13 @@
       </div>
     </header>
     <section>
+      <article>
+        <h3>Description</h3>
+        <p>A <strong>service</strong> is a web application that interacts with the revisit.link hub. It accepts image data that is encoded in <a href="http://en.wikipedia.org/wiki/Base64">base64</a>, performs manipulations to the data to produce crazy glitches in the image, and returns the data back, also in base64 format. Developers are free to use whatever code stacks they want, so far have created services in a variety of technologies including node.js, go, processing, and ruby.</p>
+        <p>Once a service is online and validated, it can be publically listed in the central hub. Once it's published, people can visit <a href="//hub.revisit.link/">hub.revisit.link</a> to create glitch art with that service. See below for instructions on listing your service.</p>
+        <p>In order to be added to the hub, a service must follow all of the rules below. Use <a href="https://github.com/revisitors/revisit-test-util">this project to test requests</a> to your service, and <a href="https://github.com/revisitors/node-revisit-validator">this project to validate</a> your service.</p>
+      </article>
+      <article>
       <h3>Specifications</h3>
       <ol>
         <li>The following are the only REST calls the service needs to provide to users:
@@ -57,6 +64,7 @@
         <li>If any of the services violate the rules listed above, they will be removed from the central hub (or not merged).</li>
         <li>Once you are ready to include your service to the central hub, add your domain and send a <a href="https://github.com/revisitors/revisit.link.hub/blob/master/config/services.json">pull request to this file</a>.</li>
       </ol>
+      </article>
     </section>
     <footer>
       <p>This content is all hosted on <a href="https://github.com/revisitors/revisit.link">Github</a></p>
